@@ -1,0 +1,107 @@
+/* 弥散渐变背景 */
+.stacked-linear::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 14.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    background:
+        radial-gradient(circle at 50% 0,
+            rgba(255, 255, 255, .5),
+            rgba(0, 255, 0, 0) 60%),
+        radial-gradient(circle at 71% 10%,
+            rgba(72, 211, 234, .2),
+            rgba(255, 255, 255, 0) 70.71%),
+        radial-gradient(circle at 80% 0,
+            rgba(234, 72, 163, .4),
+            rgba(0, 253, 0, 0) 70.71%),
+        radial-gradient(circle at 15% 10%,
+            rgba(234, 72, 218, .6),
+            rgba(0, 255, 0, 0) 50%),
+        radial-gradient(circle at 100% 71%,
+            rgba(234, 211, 72, .02),
+            rgba(255, 255, 255, 0) 80%),
+        radial-gradient(circle at 2% 89%,
+            rgba(234, 211, 72, .02),
+            rgba(255, 255, 255, 0) 90%) white
+}
+
+/* 首页搜索模块 */
+.home-search {
+    width: 17.35rem;
+    height: 2.2rem;
+    border: 1px solid #E93B9D;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.home-search .logo {
+    width: 3.6rem;
+    height: 1rem;
+}
+
+.home-search .line {
+    display: block;
+    height: 1rem;
+    border-right: 1px solid #D9D9D9;
+}
+
+.home-search input::-webkit-input-placeholder {
+    font-size: .6rem;
+    color: #B8B8B8;
+
+}
+
+.home-search input {
+    border: none;
+    width: 8.6rem;
+    height: 2rem;
+    padding: 0;
+    line-height: normal;
+}
+
+.home-search .button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: .25rem;
+    padding: 0;
+}
+
+/* 白色卡片 */
+.card {
+    border-radius: .3rem;
+    background-color: #fff;
+}
+
+/* 轮播图 */
+.swiper .swiper-slide {
+    width: 14.5rem;
+    /* height: 5.8rem; */
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .my-bullet {
+    display: inline-block;
+    width: 1.2rem;
+    height: .1rem;
+    background-color: #D9D9D9;
+    margin: 0 .2rem;
+}
+
+.swiper .active {
+    background-color: #E93B9D;
+}
+
+/* 金刚区 */
+.diamond img {
+    width: 2rem;
+    height: 2rem;
+}

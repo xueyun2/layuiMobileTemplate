@@ -11,54 +11,84 @@
     <!-- 公共样式部分 -->
     <link rel="stylesheet" href="/static/js/layui/css/layui.css">
     <link rel="stylesheet" href="/static/css/public/public.css">
+    <link rel="stylesheet" href="/static/css/public/iconfont.css">
     <!-- 当前页面部分 -->
     <link rel="stylesheet" href="/static/css/index/index.css">
-    <!-- 轮播图插件 -->
+    <!-- 插件样式 -->
     <link rel="stylesheet" href="/static/css/lib/swiper.min.css">
 </head>
 
-<body>
-    <div class="font-blue font-center">移动端首页</div>
-    <div class="font-14 m-t-10 font-grey">说明文件</div>
-    <button type="button" class="button">一个标准的按钮</button>
-    <button type="button" class="button medium">一个标准的按钮<i class="layui-icon layui-icon-left"></i></button>
-    <button type="button" class="button mini">一个小按钮</button>
-    
-    <div class="layui-form">
-        <input type="text" value="" placeholder="请输入">
-        <input type="radio" lay-ignore >
-        <input type="checkbox" lay-ignore >
-        <div class="flex align-v-center">
-            <select name="city" lay-verify="required">
-                <option value=""></option>
-                <option value="0">北京</option>
-                <option value="1">上海</option>
-                <option value="2">广州</option>
-                <option value="3">深圳</option>
-                <option value="4">杭州</option>
-            </select>
-            <select name="city" lay-verify="required">
-                <option value=""></option>
-                <option value="0">北京</option>
-                <option value="1">上海</option>
-                <option value="2">广州</option>
-                <option value="3">深圳</option>
-                <option value="4">杭州</option>
-            </select>
-            <select name="city" lay-verify="required">
-                <option value=""></option>
-                <option value="0">北京</option>
-                <option value="1">上海</option>
-                <option value="2">广州</option>
-                <option value="3">深圳</option>
-                <option value="4">杭州</option>
-            </select>
+<body class="bg-blue-light">
+
+    <div class="stacked-linear rela card p-14 p-b-20">
+        <!-- 搜索 -->
+        <div class="home-search flex align-v-center p-lr-14 rela">
+            <a href="" title="">
+                <img src="/static/img/logo.png" alt="" class="logo">
+            </a>
+            <i class="line m-l-14"></i>
+            <input class="m-lr-14 " type="text" value="" placeholder="搜索笔记,搜问答,搜医生">
+            <button type="button" class="button flex align-h-center align-v-center">
+                <i class="iconfont icon-sousuo font-white"></i>
+            </button>
         </div>
-        
+        <!-- 轮播图 -->
+        <div class="swiper m-t-20" id="home-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/static/img/baner01.png" alt="">  
+                </div>
+                <div class="swiper-slide">
+                    <img src="/static/img/baner02.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/static/img/baner03.png" alt="">
+                </div>
+            </div>
+            <!-- 分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 金刚区 -->
+        <ul class="flex rela diamond m-t-20">
+            <li class="flex-1 font-center">
+                <a href="" title="">
+                    <img src="/static/img/Scientificbeauty.png" alt="">
+                    <div class="font-12">科学变美</div>
+                </a>
+            </li>
+            <li class="flex-1 font-center">
+                <a href="" title="">
+                    <img src="/static/img/ask.png" alt="">
+                    <div class="font-12">问诊</div>
+                </a>
+            </li>
+            <li class="flex-1 font-center">
+                <a href="" title="">
+                    <img src="/static/img/doctor.png" alt="">
+                    <div class="font-12">医生</div>
+                </a>
+            </li>
+            <li class="flex-1 font-center">
+                <a href="" title="">
+                    <img src="/static/img/hospital.png" alt="">
+                    <div class="font-12">机构</div>
+                </a>
+            </li>
+        </ul>
     </div>
     <!-- 全局js -->
+    <!-- 用于存放全局变量 -->
+    <script>
+        const RUL = 1;
+        const USER_INFO = {};
+    </script>
     <script src="/static/js/layui/layui.js"></script>
     <script src="/static/js/layui.config.js"></script>
+    <!-- 当前页面全局变量 -->
+    <script>
+        const PAGE = 1;
+        const TOTAL = 22;
+    </script>
     <!-- 当前页面js -->
     <script src="/static/js/index/index.js"></script>
 </body>
