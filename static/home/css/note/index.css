@@ -1,0 +1,73 @@
+/* 话题列表 */
+.topic-list .topic-item {
+    max-width: 7rem;
+}
+
+.topic-list li:nth-child(2n) {
+    margin-right: 0;
+
+}
+
+.topic-list .active .title {
+    color: #E93B9D;
+}
+
+/* 指示器样式修改 */
+.topic-hot .swiper-pagination {
+    bottom: 0px;
+}
+
+.topic-hot .my-bullet {
+    display: inline-block;
+    width: 1.2rem;
+    height: .1rem;
+    background-color: #D9D9D9;
+    margin: 0 .2rem;
+}
+
+.topic-hot .swiper-pagination .active {
+    background-color: #E93B9D;
+}
+
+/* 笔记列表 */
+.note-list li {
+    margin-right: .65rem;
+
+}
+
+.note-list li:nth-child(2n) {
+    margin-right: 0;
+}
+
+/* 笔记详情 */
+.tag-list .tag {
+    border: none;
+}
+
+.detai-content img {
+    max-width: 100%;
+}
+
+/* 用户信息 */
+.user-info .avatar {
+    width: 2.7rem;
+    height: 2.7rem;
+}
+
+/* 点评详情 */
+.comment-list .avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* 固定操作导航 */
+.operate-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #F1F1F1;
+    box-shadow: 2px 0px 6px rgba(156, 156, 156, 0.25);
+}
+

@@ -1,0 +1,37 @@
+/* 话题搜索 */
+.topic-search{
+    border-radius: 2.9rem;
+    width: 17.35rem;
+    height: 40px;
+    box-sizing: border-box;
+}
+.topic-search input{
+    border: none;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    padding: 0;
+    font-size: .7rem;
+}
+.topic-search .button{
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    padding: 0;
+}
+/* 笔记列表 */
+.note-list li{
+    margin-right: .65rem;
+
+}
+.note-list li:nth-child(2n){
+    margin-right: 0;
+}
+/* 话题详情头部 */
+.topic-head{
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.topic-head .medium{
+    font-size: .6rem;
+}

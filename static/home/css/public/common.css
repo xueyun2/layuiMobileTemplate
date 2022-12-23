@@ -1,0 +1,233 @@
+/* 底部导航 */
+.bottom-nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    box-shadow: .1rem 0 .3rem rgba(156, 156, 156, 0.25);
+}
+
+.bottom-nav i {
+    font-size: 1.2rem;
+}
+
+.bottom-nav img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.bottom-nav a {
+    display: block;
+}
+
+.bottom-nav .active a {
+    color: #E93B9D;
+}
+
+.bottom-nav .active i {
+    color: #E93B9D !important;
+}
+
+/* 头像圆角 */
+.avatar {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 笔记项目 */
+.note-item {
+    width: 8.35rem;
+}
+
+.note-item .user-avatar {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.note-item .note-img {
+    width: 8.35rem;
+    height: 5.5rem;
+}
+
+/* 懂美号 */
+.happy .user-avatar {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.happy .happy-img {
+    width: 4.6rem;
+    height: 4.1rem;
+    border-radius: .3rem;
+}
+
+.happy .horn {
+    width: .9rem;
+    height: 1rem;
+    background: url('../../img/polygon.png') no-repeat;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 话题 */
+.topic-item .avatar {
+    width: 1rem;
+    height: 1rem;
+    margin-right: -0.5rem;
+    border: 2px solid #fff;
+}
+
+/* 评分 */
+.score {
+    width: 2.95rem;
+    height: .55rem;
+    background: url("../../img/score.png") no-repeat;
+    background-size: 2.95rem 1.1rem;
+    position: relative;
+
+}
+
+.score .score-active {
+    width: 100%;
+    height: .55rem;
+    position: absolute;
+    background: url("../../img/score.png") no-repeat;
+    background-position-y: -.55rem;
+    background-size: 2.95rem 1.1rem;
+    left: 0;
+    top: 0;
+}
+
+/* 医院 */
+.hospital-item {
+    width: 8.35rem;
+}
+
+/* 选项卡 */
+.tab {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tab::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to right, transparent, #fff);
+}
+
+.tab ul::-webkit-scrollbar {
+    display: none;
+}
+
+.tab ul {
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: 0;
+    overflow-x: auto;
+}
+
+.tab li {
+    color: #666666;
+    margin-right: 1.5rem;
+    display: inline-block;
+}
+
+.tab li.active a {
+    color: #333333;
+}
+
+.tab li.active::after {
+    content: '';
+    display: block;
+    width: 1.3rem;
+    height: .2rem;
+    background: #E93B9D;
+    border-radius: .3rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 顶部导航 */
+.nav-top .title {
+    left: 50%;
+    top: 50%;
+    max-width: 11rem;
+    transform: translate(-50%, -50%);
+}
+
+.nav-suck {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+/* 医生 */
+.doctor .avatar {
+    width: 3.6rem;
+    height: 3.7rem;
+}
+
+/* 问答 */
+.ask-item .icon {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url('../../img/aks.png') no-repeat center/cover;
+}
+
+.ask-item .icon-answer {
+    background: url('../../img/answer.png') no-repeat center/cover;
+
+}
+
+.ask-item .content {
+    line-height: 1.2rem;
+}
+
+.ask-item .tag {
+    border: none;
+}
+
+/* 卡片风格 */
+.card {
+    background-color: #fff;
+    border-radius: .3rem;
+    box-sizing: border-box;
+}
+
+/* 侧边栏菜单 */
+.menu-list .active a,
+.menu-list .active i {
+    color: #E93B9D !important;
+}
+.fixbar{
+    position: fixed;
+    right: .7rem;
+    bottom: 4rem;
+}
+/* 咨询按钮 */
+.consult-global {
+    width: 2rem;
+    height: 2rem;
+    background: #E93B9D;
+    box-shadow: 0px .2rem .25rem .2rem rgba(233, 59, 157, 0.1);
+    border-radius: 1.05rem;
+}
+/* 返回顶部 */
+.back-top {
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    box-shadow: 0px .2rem .25rem .2rem rgba(235, 235, 235, 0.25);
+    border-radius: 1.05rem;
+}

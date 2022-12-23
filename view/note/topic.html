@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 移动端REM计算js -->
+    <script src="/static/home/js/public/rem.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>移动端</title>
+    <!-- 公共样式部分 -->
+    <link rel="stylesheet" href="/static/home/js/layui/css/layui.css">
+    <link rel="stylesheet" href="/static/home/css/public/iconfont.css">
+    <link rel="stylesheet" href="/static/home/css/public/public.css">
+    <link rel="stylesheet" href="/static/home/css/public/common.css">
+    <!-- 插件样式 -->
+    <link rel="stylesheet" href="/static/home/css/lib/swiper.min.css">
+    <!-- 当前页面样式 -->
+    <link rel="stylesheet" href="/static/home/css/note/topic.css">
+</head>
+
+<body>
+    <header class="nav-suck">
+        <!-- 导航 -->
+        <nav class="rela flex bg-white align-h-between nav-top p-lr-14 p-tb-10 bg-white border-bottom">
+            <i class="iconfont icon-zuojiantou font-24 font-grey"></i>
+            <div class="title abso text-hidden-1">笔记话题</div>
+            <div class="flex">
+                <!-- 分享按钮 -->
+                <!-- <i class="iconfont icon-fenxiang font-24 font-grey m-r-14"></i> -->
+                <!-- 搜索按钮 -->
+                <!-- <i class="iconfont icon-sousuo font-24 font-grey m-r-14"></i> -->
+                <i class="iconfont icon-caidan font-24 font-grey" id="show-menu"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="card p-14">
+            <div class="flex align-v-center align-h-center m-b-20">
+                <div class="topic-search p-lr-8 p-tb-6 flex align-v-center border">
+                    <input type="text" placeholder="输入话题名称..." class="flex-1">
+                    <button type="button" class="button mini">
+                        <i class="iconfont icon-sousuo font-white"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="tab">
+                <ul class="font-14   ">
+                    <li class="active p-b-8 rela">
+                        <a href="http://" title="" target="_blank">最新</a>
+                    </li>
+                    <li class="p-b-8 rela">
+                        <a href="http://" title="" target="_blank">热门</a>
+                </ul>
+            </div>
+
+            <ul class="m-t-20">
+                <li class="m-b-14">
+                    <div class="topic-item p-b-10 border-bottom">
+                        <a href="" title="">
+                            <div class="flex align-v-center m-b-10 flex-1">
+                                <i class="iconfont icon-huati font-18 font-grey-light"></i>
+                                <div class="m-l-4 font-16 text-hidden-1 flex-1">玻尿酸隆鼻好不好</div>
+                            </div>
+                            <div class="font-12 text-hidden-2 m-b-10 font-grey">
+                                网上关于印度人口超过中国可能是假消息：“历史性的一刻！印度人口超越中国成为全球第一！3月4日</div>
+                            <div class="flex align-h-between align-v-center">
+                                <div class="flex align-v-center">
+                                    <div class="flex m-r-11">
+                                        <img src="/static/home/img/user.png" class="avatar user-avatar rela" alt="">
+                                        <img src="/static/home/img/user.png" class="avatar user-avatar rela" alt="">
+                                        <img src="/static/home/img/user.png" class="avatar user-avatar rela" alt="">
+                                    </div>
+                                    <div class="font-12 font-grey-light m-l-8">65k人参与讨论</div>
+                                </div>
+                                <div class="font-12 font-grey-light">35k次浏览</div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+            <div class="flex align-v-center align-h-center m-t-20">
+                <button class="button mini bg-blue-light font-blue" type="button">点击加载更多</button>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="font-12 p-lr-14 p-t-30 p-b-71 font-grey-light">
+        <p>郑重声明：懂美姐网版权所有，未经授权禁止转载、摘编、复制或建立镜像，如有违反，将追究其法律责任。</p>
+        <p class="m-t-10">免责声明：本站为非营利性网站， 部分图片或文章来源于互联网，如果无意中对您的权益构成了侵犯，我们深表歉意，请来电告知，我们立即删除！</p>
+        <div class=" font-center font-grey-light m-t-20">
+            <p>客服咨询：400-888-7710</p>
+            <p class="m-tb-10">Copyright © 2020 海南懂美姐科技有限公司</p>
+            <a title="" href="" target="_blank" class="font-grey-light ">琼ICP备 2021000857号</a>
+        </div>
+    </footer>
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <ul class="flex align-v-center font-center  ">
+            <li class="flex-1  ">
+                <a href="" title="" class="p-tb-10">
+                    <i class="iconfont icon-shouye font-grey"></i>
+                    <div class="font-12 ">首页</div>
+                </a>
+            </li>
+            <li class="flex-1 active">
+                <a href="" title="" class="p-tb-10">
+                    <i class="iconfont icon-biji font-grey"></i>
+                    <div class="font-12">笔记</div>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a href="" title="" class="p-tb-10">
+                    <img src="/static/home/img/consult.png" alt="">
+                    <div class="font-12">咨询</div>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a href="" title="" class="p-tb-10">
+                    <i class="iconfont icon-dongmeihao font-grey"></i>
+                    <div class="font-12">懂美号</div>
+                </a>
+            </li>
+            <li class="flex-1">
+                <a href="" title="" class="p-tb-10">
+                    <i class="iconfont icon-yonghu font-grey"></i>
+                    <div class="font-12">我的</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 公共固定按钮 -->
+    <div class="fixbar">
+        <!-- 公共咨询按钮 -->
+        <div class="consult-global flex align-v-center align-h-center rela">
+            <i class="iconfont icon-dianping font-24 font-white"></i>
+        </div>
+        <!-- 公共返回顶部按钮 -->
+        <div class="back-top flex align-v-center align-h-center m-t-20" style="display: none;">
+            <i class="iconfont icon-shangjiantou font-24 font-pink"></i>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <!-- 用于存放全局变量 -->
+    <script>
+        const RUL = 1;
+        const USER_INFO = {};
+    </script>
+    <script src="/static/home/js/layui/layui.js"></script>
+    <script src="/static/home/js/layui.config.js"></script>
+    <!-- 当前页面全局变量 -->
+    <script>
+        const PAGE = 1;
+        const TOTAL = 22;
+    </script>
+    <!-- 当前页面js -->
+    <script src="/static/home/js/note/topic.js"></script>
+</body>
+
+</html>
